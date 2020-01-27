@@ -1,0 +1,11 @@
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\bin\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.exe
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\bin\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.deps.json
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\bin\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.runtimeconfig.json
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\bin\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.runtimeconfig.dev.json
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\bin\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.dll
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\bin\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.pdb
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\obj\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.csprojAssemblyReference.cache
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\obj\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.AssemblyInfoInputs.cache
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\obj\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.AssemblyInfo.cs
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\obj\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.dll
+C:\Users\shami\source\repos\Capstone 1 - Pig Latin\Capstone 1 - Pig Latin\obj\Debug\netcoreapp3.1\Capstone 1 - Pig Latin.pdb
