@@ -25,8 +25,7 @@ namespace Capstone_1___Pig_Latin
             return userResponse;
         }
 
-        //word starts with a vowel, add way. Dont need to make another method because anything else will be considered consonants
-        //consonants get moved to the end of the word + ay
+        //goal: makes the first letter of the word, move it to the end, add + ay; 
         public static void TranslateToPigLatin(string message)
         {
             //Try using StringBuilder next time or maybe use Split();
@@ -44,10 +43,10 @@ namespace Capstone_1___Pig_Latin
         //could renter the word instead of going through the whole process and TryAgain.
         public static void ConfirmationToTranslate(string word)
         {
-            string firstLetter = word.Substring(0); //.Substring - new string that starts at a specified index
+            string firstLetter = word.Substring(0, 1); //.Substring - new string that starts at a specified index
             var vowels = "aeiou";
 
-            GetUserInput($"\nWould you like to translate {word} into Pig Latin? Please enter y/n: ");
+            GetUserInput($"\nWould you like to translate '{word}' into Pig Latin? Please enter y/n: ");
             string continueToTranslate = Console.ReadLine();
 
             if(continueToTranslate == "yes".ToLower() || continueToTranslate == "y".ToLower())
@@ -74,25 +73,32 @@ namespace Capstone_1___Pig_Latin
         //Created this method because I could reuse this TryAgain method multiple times. 
         public static bool TryAgain()
         {
-            Console.WriteLine("\nWould you like to translate another word to Pig Latin? Please enter y/n:");
-            string userContinue = Console.ReadLine().ToLower();
+            //I added this loop because once user says 'yes' to translate another word, this method starts over again and repeats the question.
+            //With this loop it jumps back to the main method and asks the user to pick a new word. 
+            bool go = true;
+            while (go)
+            {
+                Console.WriteLine("\nWould you like to translate another word to Pig Latin? Please enter y/n:");
+                string userContinue = Console.ReadLine().ToLower();
 
-            if (userContinue == "y".ToLower() || userContinue == "yes".ToLower())
-            {
-                Console.Clear();
-                return true; //returns back to the first method
+                if (userContinue == "y".ToLower() || userContinue == "yes".ToLower())
+                {
+                    Console.Clear();
+                    return true; //returns back to the first method
+                }
+                else if (userContinue == "n".ToLower() || userContinue == "no".ToLower())
+                {
+                    Console.WriteLine("Bummer! Thanks for playing, hope you have a wonderful day!");
+                    return false; //terminates
+                }
+                else
+                {
+                    //Recursion, if entry is invalid when asked to Continue, loops back to asking the "would you like to continue y/n
+                    Console.WriteLine("Uh oh, invalid entry.");
+                    return TryAgain(); //called in the first method.
+                }
             }
-            else if (userContinue == "n".ToLower() || userContinue == "no".ToLower())
-            {
-                Console.WriteLine("Bummer! Thanks for playing, hope you have a wonderful day!");
-                return false; //terminates
-            }
-            else
-            {
-                //Recursion, if entry is invalid when asked to Continue, loops back to asking the "would you like to continue y/n
-                Console.WriteLine("Uh oh, invalid entry. Please enter only y/n");
-                return TryAgain(); //called in the first method.
-            }
+            return true;
         }
     }
 }
